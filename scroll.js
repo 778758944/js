@@ -176,5 +176,5 @@ function doMove(obj, iTarget, fnEnd, buffer)
 	var iSpeed = (iTarget - iLeft) / (buffer || 5);
 	iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
 	iLeft == iTarget ? (clearInterval(obj.timer), fnEnd && fnEnd()) : obj.style.left = iLeft + iSpeed + "px"
-}
+};
 
